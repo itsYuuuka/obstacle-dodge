@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour
 {
+    [SerializeField] float droptTime = 2f;
+
     void Start()
     {
         
@@ -9,6 +11,9 @@ public class Dropper : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(Time.time);
+        if (Time.time > droptTime)
+        {
+            Debug.Log("Dropping object after 3 seconds");
+        }
     }
 }
