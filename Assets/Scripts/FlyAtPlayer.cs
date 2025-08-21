@@ -6,9 +6,13 @@ public class FlyAtPlayer : MonoBehaviour
     [SerializeField] Transform player;
     Vector3 playerPos;
 
-    void Start()
+    void Awake()
     {
         gameObject.SetActive(false);
+    }
+
+    void Start()
+    {
         playerPos = player.transform.position;
     }
 
