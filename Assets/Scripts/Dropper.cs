@@ -13,7 +13,7 @@ public class Dropper : MonoBehaviour
     {
         if (Time.time > droptTime)
         {
-            Debug.Log("Dropping object after 3 seconds");
+            Debug.Log("Watch out! An obstacle is about to drop!");
         }
     }
 }
